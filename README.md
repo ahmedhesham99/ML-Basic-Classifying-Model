@@ -20,11 +20,8 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-Notes for deploying to Streamlit Cloud:
+Online Streamlit Link:
+https://ml-basic-classifying-model.streamlit.app/
 
-- Do not hard-code absolute Windows paths in the app — use the defaults above or set the `RF_MODEL_PATH` env var in the Streamlit app settings.
-- If the model file is large (>100 MB), add it via Git LFS or host it at `RF_MODEL_URL` and set that env var in Streamlit so the app can download it at startup.
 
-If you want, I can prepare a short deployment checklist for Streamlit Cloud and update the repo automated settings.
 
-Upload a CSV with the same columns as the training data (or use the single-sample form). If you prefer, push the folder to GitHub and share the repository; visitors can run the two commands above.
