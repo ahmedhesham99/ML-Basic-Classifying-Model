@@ -141,7 +141,6 @@ def predict_df(model, transformers, df):
 
 def main():
     st.title('Advertising Click Prediction')
-    st.write('Using your model at the provided path and reproducing notebook feature engineering.')
 
     model = load_model()
     if model is None:
@@ -201,3 +200,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
